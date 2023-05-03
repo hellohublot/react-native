@@ -1052,8 +1052,8 @@ rn_apple_library(
             name = "ImageStoreManager",
             native_class_func = "RCTImageStoreManagerCls",
         ) + react_module_plugin_providers(
-            name = "LocalAssetImageLoader",
-            native_class_func = "RCTLocalAssetImageLoaderCls",
+            name = "BundleAssetImageLoader",
+            native_class_func = "RCTBundleAssetImageLoaderCls",
         ) + [
             plugin(
                 RCT_IMAGE_DATA_DECODER_SOCKET,
@@ -1061,7 +1061,7 @@ rn_apple_library(
             ),
             plugin(
                 RCT_IMAGE_URL_LOADER_SOCKET,
-                name = "LocalAssetImageLoader",
+                name = "BundleAssetImageLoader",
             ),
             plugin(
                 RCT_URL_REQUEST_HANDLER_SOCKET,

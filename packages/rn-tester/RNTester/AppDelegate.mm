@@ -32,7 +32,7 @@
 #import <React/RCTJSIExecutorRuntimeInstaller.h>
 #import <React/RCTJavaScriptLoader.h>
 #import <React/RCTLinkingManager.h>
-#import <React/RCTLocalAssetImageLoader.h>
+#import <React/RCTBundleAssetImageLoader.h>
 #import <React/RCTNetworking.h>
 #import <React/RCTRootView.h>
 
@@ -227,7 +227,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   if (moduleClass == RCTImageLoader.class) {
     return [[moduleClass alloc] initWithRedirectDelegate:nil
         loadersProvider:^NSArray<id<RCTImageURLLoader>> *(RCTModuleRegistry *moduleRegistry) {
-          return @[ [RCTLocalAssetImageLoader new] ];
+          return @[ [RCTBundleAssetImageLoader new] ];
         }
         decodersProvider:^NSArray<id<RCTImageDataDecoder>> *(RCTModuleRegistry *moduleRegistry) {
           return @[ [RCTGIFImageDecoder new] ];

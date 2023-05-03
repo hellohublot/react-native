@@ -23,7 +23,7 @@ Class RCTImageClassProvider(const char *name) {
     {"ImageEditingManager", RCTImageEditingManagerCls},
     {"ImageLoader", RCTImageLoaderCls},
     {"ImageStoreManager", RCTImageStoreManagerCls},
-    {"LocalAssetImageLoader", RCTLocalAssetImageLoaderCls},
+    {"BundleAssetImageLoader", RCTBundleAssetImageLoaderCls},
   };
 
   auto p = sCoreModuleClassMap->find(name);

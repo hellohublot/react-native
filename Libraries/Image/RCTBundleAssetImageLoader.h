@@ -7,6 +7,6 @@
 
 #import <React/RCTImageURLLoader.h>
 
-@interface RCTLocalAssetImageLoader : NSObject <RCTImageURLLoader>
+@interface RCTBundleAssetImageLoader : NSObject <RCTImageURLLoader>
 
 @end
